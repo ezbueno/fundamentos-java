@@ -11,7 +11,6 @@ package modulo3.exercicios3.propostos;
  * Escreva uma aplicação que efetua o cálculo do fatorial utilizando a forma iterativa (usando 
  * estruturas de repetição).
  */
-
 public class Exercicio_3_1 {
 	
 	public static void main(String[] args) {

@@ -5,7 +5,6 @@ package modulo3.exercicios1.propostos;
  * Um aluno tirou notas 8.5, 7.5 e 6.0 em provas que tinham peso 3, 2 e 5, respectivamente. 
  * Escreva um programa que imprima a média do aluno. 
  */
-
 public class Exercicio1 {
 	
 	public static void main(String[] args) {

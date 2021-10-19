@@ -10,7 +10,6 @@ package modulo3.exercicios5.propostos;
  * 1270. 
  * Crie este programa usando a estrutura de controle switch.
  */
-
 public class Exercicio5_2 {
 
 	public static void main(String[] args) {

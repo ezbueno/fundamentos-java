@@ -7,7 +7,6 @@ package modulo3.exercicios4.propostos;
  * elementos valem 1, e daí por diante, o n-ésimo elemento vale o (n-1)-ésimo elemento somado 
  * ao (n-2)-ésimo elemento (ex: 8 = 5 + 3).
  */
-
 public class Exercicio4 {
 	
 	public static void main(String[] args) {

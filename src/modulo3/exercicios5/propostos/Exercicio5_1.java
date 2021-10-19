@@ -10,7 +10,6 @@ package modulo3.exercicios5.propostos;
  * 1270. 
  * Crie este programa primeiro usando a estrutura de controle if-else.
  */
-
 public class Exercicio5_1 {
 
 	public static void main(String[] args) {

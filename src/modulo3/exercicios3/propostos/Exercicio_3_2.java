@@ -11,7 +11,6 @@ package modulo3.exercicios3.propostos;
  * Escreva uma aplicação que efetua o cálculo do fatorial utilizando a forma recursiva (o 
  * método de cálculo do fatorial chama ele mesmo). 
  */
-
 public class Exercicio_3_2 {
 	
 	public static void main(String[] args) {
