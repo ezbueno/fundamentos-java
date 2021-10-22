@@ -4,12 +4,12 @@ public class Data {
 	private int dia;
 	private int mes;
 	private int ano;
-	private int hora;
-	private int minuto;
-	private int segundo;
+	private int hora = -1;
+	private int minuto = -1;
+	private int segundo = -1;
 
-	public static final int FORMATO_12H = 12;
-	public static final int FORMATO_24H = 24;
+	public static final int FORMATO_12H = 1;
+	public static final int FORMATO_24H = 2;
 
 	public Data(int dia, int mes, int ano) {
 		this.dia = dia;
@@ -25,24 +25,35 @@ public class Data {
 	}
 
 	public void imprimir(int formato) {
-//		if (this.getHora() == 0 && formato == Data.FORMATO_12H) {
-//			System.out.println(this.getDia() + "/" + this.getMes() + "/" + this.getAno() + " " + (this.getHora() + Data.FORMATO_12H) + ":" + this.getMinuto() + ":" + this.getSegundo() + " PM");
-//		} else if (this.getHora() == 12 && formato == Data.FORMATO_24H) {
-//			System.out.println(this.getDia() + "/" + this.getMes() + "/" + this.getAno() + " " + (this.getHora() - Data.FORMATO_12H) + ":" + this.getMinuto() + ":" + this.getSegundo() + " AM");
-//		}
-//		
-		if (formato == Data.FORMATO_12H) {			
-			if (this.getHora() > Data.FORMATO_12H) {
-				int horaFormato = this.getHora() - Data.FORMATO_12H;
-				System.out.println(this.getDia() + "/" + this.getMes() + "/" + this.getAno() + " " + horaFormato + ":" + this.getMinuto() + ":" + this.getSegundo() + " AM");
-			} else {
-				System.out.println(this.getDia() + "/" + this.getMes() + "/" + this.getAno() + " " + this.getHora() + ":" + this.getMinuto() + ":" + this.getSegundo() + " AM");
-			}			
-		} else if (this.getHora() > Data.FORMATO_12H  && this.getHora() <= Data.FORMATO_24H) {
-			System.out.println(this.getDia() + "/" + this.getMes() + "/" + this.getAno() + " " + this.getHora() + ":" + this.getMinuto() + ":" + this.getSegundo() + " PM");
-		} else {
-			System.out.println(this.getDia() + "/" + this.getMes() + "/" + this.getAno() + " " + (this.getHora() + Data.FORMATO_12H)  + ":" + this.getMinuto() + ":" + this.getSegundo() + " PM");
-		}
+ 		String data = this.dia + "/" + this.mes + "/" + this.ano;
+ 		
+ 		if (this.hora == -1) {
+ 			System.out.println(data);
+ 		} else {
+ 			String horario = ":" + this.minuto + ":" + this.segundo;
+ 			
+ 			if (formato == Data.FORMATO_24H) {
+ 				if (this.hora == 0) {
+ 					horario = this.hora + horario;
+ 				} else if (this.hora > 0 && this.hora < 12) {
+ 					horario = (this.hora + 12) + horario;
+ 				} else {
+ 					horario = this.hora + horario; 	
+ 				}
+ 			} else {
+ 				if (this.hora == 0) {
+ 					horario = 12 + horario;
+ 					horario += " AM";
+ 				} else if (this.hora >= 12) {
+ 					horario = (this.hora - 12) + horario;
+ 					horario += " PM";
+ 				} else {
+ 					horario = this.hora + horario;
+ 					horario += " AM";
+ 				}
+ 			}
+ 			System.out.println(data + " " + horario);
+ 		}
 	}
 
 	public int getDia() {
