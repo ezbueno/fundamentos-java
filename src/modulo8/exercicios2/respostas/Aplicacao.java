@@ -2,6 +2,7 @@ package modulo8.exercicios2.respostas;
 
 public class Aplicacao {
 
+	@SuppressWarnings("null")
 	public static void main(String[] args) {
 
 		// Declara um objeto nulo
