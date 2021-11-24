@@ -3,16 +3,16 @@ package modulo7.exercicios3.propostos;
 /**
  * @author Ezandro Bueno
  * O Java possui uma interface chamada Cloneable, que pode ser implementada por classes que 
-* s„o capazes de gerar cÛpias de objetos. Esta interface n„o possui mÈtodos, mas classes que a 
-* implementam devem sobrescrever o mÈtodo clone(), definido na classe Object. Dentro 
-* deste mÈtodo È implementada a lÛgica para criar um novo objeto com base no objeto original. 
-* Com base nisto, crie uma classe Porta que suporta a criaÁ„o de novos objetos (cÛpia). Ela
-* deve ter os atributos altura (double), largura (double) e aberta (boolean). TambÈm deve 
-* possuir os mÈtodos abrir(), fechar() e os mÈtodos getters correspondentes aos atributos. 
-* Como uma porta pode criar outras cÛpias dela mesma, vocÍ deve sobrescrever o mÈtodo 
-* clone(), o qual deve criar um novo objeto com os valores dos atributos copiados e retorn·-lo.
-* Dica: O mÈtodo clone() lanÁa uma exceÁ„o (CloneNotSupportedException). N„o È preciso 
-* se preocupar com ela neste momento, ent„o declare o mÈtodo main() da sua aplicaÁ„o da 
+* s√£o capazes de gerar c√≥pias de objetos. Esta interface n√£o possui m√©todos, mas classes que a 
+* implementam devem sobrescrever o m√©todo clone(), definido na classe Object. Dentro 
+* deste m√©todo √© implementada a l√≥gica para criar um novo objeto com base no objeto original. 
+* Com base nisto, crie uma classe Porta que suporta a cria√ß√£o de novos objetos (c√≥pia). Ela
+* deve ter os atributos altura (double), largura (double) e aberta (boolean). Tamb√©m deve 
+* possuir os m√©todos abrir(), fechar() e os m√©todos getters correspondentes aos atributos. 
+* Como uma porta pode criar outras c√≥pias dela mesma, voc√™ deve sobrescrever o m√©todo 
+* clone(), o qual deve criar um novo objeto com os valores dos atributos copiados e retorn√°-lo.
+* Dica: O m√©todo clone() lan√ßa uma exce√ß√£o (CloneNotSupportedException). N√£o √© preciso 
+* se preocupar com ela neste momento, ent√£o declare o m√©todo main() da sua aplica√ß√£o da 
  * seguinte forma:
  * public static void main(String[] args) throws CloneNotSupportedException { 
  * //... 

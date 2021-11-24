@@ -10,19 +10,12 @@ public class Aplicacao {
 		carro.setAno(2000);
 		carro.setQuatroPortas(true);
 		carro.imprimirDados();
-		//carro.buzinar();
 		
 		System.out.println("Motocicleta");
 		Motocicleta motocicleta = new Motocicleta();
 		motocicleta.setMarca("QQQ");
 		motocicleta.setModelo("ZZZ");
 		motocicleta.setAno(2010);
-		motocicleta.imprimirDados();
-		//motocicleta.empinar();
-		//motocicleta.buzinar();
-		
-		//Caminhao caminhao = new Caminhao();
-		//caminhao.buzinar();
-		//caminhao.imprimirDados();
+		motocicleta.imprimirDados();		
 	}
 }

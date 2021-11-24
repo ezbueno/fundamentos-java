@@ -2,20 +2,20 @@ package modulo8.exercicios1.propostos;
 
 /**
  * @author Ezandro Bueno
- * Crie uma classe ContaBancaria que possui um saldo como atributo e os métodos 
- * sacar(double), depositar(double) e transferir(double, ContaBancaria). Crie também 
+ * Crie uma classe ContaBancaria que possui um saldo como atributo e os mÃ©todos 
+ * sacar(double), depositar(double) e transferir(double, ContaBancaria). Crie tambÃ©m 
  * duas checked exceptions: ValorInvalidoException e SaldoInsuficienteException. 
- * A exceção ValorInvalidoException deve ser lançada se o valor utilizado nas operações de 
- * depósito, saque ou transferência for igual ou inferior a 0. Já a exceção 
- * SaldoInsuficienteException deve ser lançada se o valor de um saque ou transferência for 
- * superior ao saldo disponível. No construtor de ValorInvalidoException é necessário 
- * fornecer uma mensagem de erro e o valor inválido utilizado. E no construtor de 
- * SaldoInsuficienteException é necessário fornecer uma mensagem de erro e também o 
- * saldo disponível. 
- * Crie uma classe que instancia duas contas e tenta realizar operações de depósito, saque e 
- * transferência. Faça transações corretas e também transações que geram exceções. Quando a 
- * transação gerar exceção, faça um catch da mesma, imprima a mensagem de erro e o valor 
- * inválido utilizado (para ValorInvalidoException) ou o saldo disponível (para 
+ * A exceÃ§Ã£o ValorInvalidoException deve ser lanÃ§ada se o valor utilizado nas operaÃ§Ãµes de 
+ * depÃ³sito, saque ou transferÃªncia for igual ou inferior a 0. JÃ¡ a exceÃ§Ã£o 
+ * SaldoInsuficienteException deve ser lanÃ§ada se o valor de um saque ou transferÃªncia for 
+ * superior ao saldo disponÃ­vel. No construtor de ValorInvalidoException Ã© necessÃ¡rio 
+ * fornecer uma mensagem de erro e o valor invÃ¡lido utilizado. E no construtor de 
+ * SaldoInsuficienteException Ã© necessÃ¡rio fornecer uma mensagem de erro e tambÃ©m o 
+ * saldo disponÃ­vel. 
+ * Crie uma classe que instancia duas contas e tenta realizar operaÃ§Ãµes de depÃ³sito, saque e 
+ * transferÃªncia. FaÃ§a transaÃ§Ãµes corretas e tambÃ©m transaÃ§Ãµes que geram exceÃ§Ãµes. Quando a 
+ * transaÃ§Ã£o gerar exceÃ§Ã£o, faÃ§a um catch da mesma, imprima a mensagem de erro e o valor 
+ * invÃ¡lido utilizado (para ValorInvalidoException) ou o saldo disponÃ­vel (para 
  * SaldoInsuficienteException).
  */
 public class Aplicacao {
@@ -27,61 +27,61 @@ public class Aplicacao {
 				
 		try {
 			c1.depositar(100);
-			System.out.println("Depósito de 100 feito com sucesso em c1");
+			System.out.println("DepÃ³sito de 100 feito com sucesso em c1");
 		} catch (ValorInvalidoException e) {
-			System.out.println("Erro: " + e.getMessage() + ". Valor inválido: " + e.getValorInvalido());
+			System.out.println("Erro: " + e.getMessage() + ". Valor invÃ¡lido: " + e.getValorInvalido());
 		}
 		
 		try {
 			c1.depositar(-10);
-			System.out.println("Depósito de -10 feito com sucesso em c1");
+			System.out.println("DepÃ³sito de -10 feito com sucesso em c1");
 		} catch (ValorInvalidoException e) {
-			System.out.println("Erro: " + e.getMessage() + ". Valor inválido: " + e.getValorInvalido());
+			System.out.println("Erro: " + e.getMessage() + ". Valor invÃ¡lido: " + e.getValorInvalido());
 		}
 		
 		try {
 			c1.sacar(30);
 			System.out.println("Saque de 30 feito com sucesso em c1");
 		} catch (ValorInvalidoException e) {
-			System.out.println("Erro: " + e.getMessage() + ". Valor inválido: " + e.getValorInvalido());
+			System.out.println("Erro: " + e.getMessage() + ". Valor invÃ¡lido: " + e.getValorInvalido());
 		} catch (SaldoInsuficienteException e) {
-			System.out.println("Erro: " + e.getMessage() + ". Saldo disponível: " + e.getSaldoDisponivel());
+			System.out.println("Erro: " + e.getMessage() + ". Saldo disponÃ­vel: " + e.getSaldoDisponivel());
 		}
 		
 		try {
 			c1.sacar(90);
 			System.out.println("Saque de 90 feito com sucesso em c1");
 		} catch (ValorInvalidoException e) {
-			System.out.println("Erro: " + e.getMessage() + ". Valor inválido: " + e.getValorInvalido());
+			System.out.println("Erro: " + e.getMessage() + ". Valor invÃ¡lido: " + e.getValorInvalido());
 		} catch (SaldoInsuficienteException e) {
-			System.out.println("Erro: " + e.getMessage() + ". Saldo disponível: " + e.getSaldoDisponivel());
+			System.out.println("Erro: " + e.getMessage() + ". Saldo disponÃ­vel: " + e.getSaldoDisponivel());
 		}
 		
 		try {
 			c1.sacar(-5);
 			System.out.println("Saque de -5 feito com sucesso em c1");
 		} catch (ValorInvalidoException e) {
-			System.out.println("Erro: " + e.getMessage() + ". Valor inválido: " + e.getValorInvalido());
+			System.out.println("Erro: " + e.getMessage() + ". Valor invÃ¡lido: " + e.getValorInvalido());
 		} catch (SaldoInsuficienteException e) {
-			System.out.println("Erro: " + e.getMessage() + ". Saldo disponível: " + e.getSaldoDisponivel());
+			System.out.println("Erro: " + e.getMessage() + ". Saldo disponÃ­vel: " + e.getSaldoDisponivel());
 		}
 		
 		try {
 			c1.transferir(50, c2);
-			System.out.println("Transferência de 50 de c1 para c2 feita com sucesso");
+			System.out.println("TransferÃªncia de 50 de c1 para c2 feita com sucesso");
 		} catch (ValorInvalidoException e) {
-			System.out.println("Erro: " + e.getMessage() + ". Valor inválido: " + e.getValorInvalido());
+			System.out.println("Erro: " + e.getMessage() + ". Valor invÃ¡lido: " + e.getValorInvalido());
 		} catch (SaldoInsuficienteException e) {
-			System.out.println("Erro: " + e.getMessage() + ". Saldo disponível: " + e.getSaldoDisponivel());
+			System.out.println("Erro: " + e.getMessage() + ". Saldo disponÃ­vel: " + e.getSaldoDisponivel());
 		}
 		
 		try {
 			c1.transferir(50, c2);
-			System.out.println("Transferência de 50 de c1 para c2 feita com sucesso");
+			System.out.println("TransferÃªncia de 50 de c1 para c2 feita com sucesso");
 		} catch (ValorInvalidoException e) {
-			System.out.println("Erro: " + e.getMessage() + ". Valor inválido: " + e.getValorInvalido());
+			System.out.println("Erro: " + e.getMessage() + ". Valor invÃ¡lido: " + e.getValorInvalido());
 		} catch (SaldoInsuficienteException e) {
-			System.out.println("Erro: " + e.getMessage() + ". Saldo disponível: " + e.getSaldoDisponivel());
+			System.out.println("Erro: " + e.getMessage() + ". Saldo disponÃ­vel: " + e.getSaldoDisponivel());
 		}
 	}
 }

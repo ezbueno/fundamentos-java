@@ -18,7 +18,7 @@ public class Contato {
 	private String email;
 	
 	/**
-	 * Endereço do contato
+	 * EndereÃ§o do contato
 	 */
 	private Endereco endereco = new Endereco();
 
@@ -34,9 +34,9 @@ public class Contato {
 	}
 	
 	/**
-	 * Define o endereço do contato
+	 * Define o endereÃ§o do contato
 	 * @param rua Rua do contato
-	 * @param numero Número do contato
+	 * @param numero NÃºmero do contato
 	 */
 	public void definirEndereco(String rua, int numero) {
 		this.endereco.setRua(rua);

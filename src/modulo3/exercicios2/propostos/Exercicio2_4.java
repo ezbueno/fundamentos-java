@@ -2,7 +2,7 @@ package modulo3.exercicios2.propostos;
 
 /**
  * @author Ezandro Bueno
- * 4. Imprima a tabuada do 9 (até o décimo valor).
+ * 4. Imprima a tabuada do 9 (atÃ© o dÃ©cimo valor).
  */
 public class Exercicio2_4 {
 

@@ -4,7 +4,7 @@ public class Aplicacao {
 
 	public static void main(String[] args) {
 		
-		Contato c = new Contato("José", "a@a.com");
+		Contato c = new Contato("JosÃ©", "a@a.com");
 		
 		StringBuilder sb = new StringBuilder();
 		sb.append("Nome: " + c.getNome() + " ");

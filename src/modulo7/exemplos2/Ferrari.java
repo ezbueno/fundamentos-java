@@ -4,12 +4,12 @@ public class Ferrari implements Carro, ItemCaro {
 
 	@Override
 	public void virarEsquerda() {
-		System.out.println("Ferrari virou à esquerda");
+		System.out.println("Ferrari virou Ã  esquerda");
 	}
 
 	@Override
 	public void virarDireita() {
-		System.out.println("Ferrari virou à direita");
+		System.out.println("Ferrari virou Ã  direita");
 	}
 
 	@Override

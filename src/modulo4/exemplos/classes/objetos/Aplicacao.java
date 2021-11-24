@@ -4,7 +4,7 @@ public class Aplicacao {
 
 	public static void main(String[] args) {
 		Pessoa p1 = new Pessoa();
-		p1.nome = "José";
+		p1.nome = "JosÃ©";
 		
 		Pessoa p2 = new Pessoa();
 		p2.nome = "Maria";

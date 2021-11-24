@@ -2,11 +2,11 @@ package modulo4.exercicios4.propostos;
 
 /**
  * @author Ezandro Bueno
- * Desenvolva um sistema escolar para cálculos de médias. Ele é composto pelas seguintes 
+ * Desenvolva um sistema escolar para cÃ¡lculos de mÃ©dias. Ele Ã© composto pelas seguintes 
  * classes: Turma, Aluno, Prova.
- * Crie uma aplicação que instancia uma turma, três alunos na turma e as duas provas para cada 
- * aluno. Defina também notas para as provas. A aplicação deve mostrar mensagens informando 
- * a média de cada aluno e a média geral da turma. 
+ * Crie uma aplicaÃ§Ã£o que instancia uma turma, trÃªs alunos na turma e as duas provas para cada 
+ * aluno. Defina tambÃ©m notas para as provas. A aplicaÃ§Ã£o deve mostrar mensagens informando 
+ * a mÃ©dia de cada aluno e a mÃ©dia geral da turma. 
  */
 public class Aplicacao {
 
@@ -22,21 +22,21 @@ public class Aplicacao {
 		aluno1.prova2.notaParte1 = 1.0;
 		aluno1.prova2.notaParte2 = 7.0;
 		
-		System.out.println("Média do aluno 1: " + aluno1.calcularMedia());
+		System.out.println("MÃ©dia do aluno 1: " + aluno1.calcularMedia());
 			
 		aluno2.prova1.notaParte1 = 6.5;
 		aluno2.prova1.notaParte2 = 3.5;
 		aluno2.prova2.notaParte1 = 0.0;
 		aluno2.prova2.notaParte2 = 3.0;
 		
-		System.out.println("Média do aluno 2: " + aluno2.calcularMedia());
+		System.out.println("MÃ©dia do aluno 2: " + aluno2.calcularMedia());
 		
 		aluno3.prova1.notaParte1 = 5.0;
 		aluno3.prova1.notaParte2 = 4.0;
 		aluno3.prova2.notaParte1 = 6.0;
 		aluno3.prova2.notaParte2 = 1.5;
 		
-		System.out.println("Média do aluno 3: " + aluno3.calcularMedia());
+		System.out.println("MÃ©dia do aluno 3: " + aluno3.calcularMedia());
 		
 		turma.aluno1.prova1.notaParte1 = aluno1.prova1.notaParte1;
 		turma.aluno1.prova1.notaParte2 = aluno1.prova1.notaParte2;
@@ -53,6 +53,6 @@ public class Aplicacao {
 		turma.aluno3.prova2.notaParte1 = aluno3.prova2.notaParte1;
 		turma.aluno3.prova2.notaParte2 = aluno3.prova2.notaParte2;
 		
-		System.out.println("Média da turma: " + turma.calcularMedia());		
+		System.out.println("MÃ©dia da turma: " + turma.calcularMedia());		
 	}
 }

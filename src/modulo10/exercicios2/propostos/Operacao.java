@@ -23,7 +23,7 @@ public enum Operacao {
 		} else if (this == DIVISAO) {
 			return n1 / n2;
 		}
-		throw new UnsupportedOperationException("N„o foi possÌvel realizar o c·lculo!");
+		throw new UnsupportedOperationException("N√£o foi poss√≠vel realizar o c√°lculo!");
 	}
 
 	@Override

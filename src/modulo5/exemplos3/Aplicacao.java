@@ -7,6 +7,6 @@ public class Aplicacao {
 		int subtracao = Matematica.subtrair(50, 10);
 		
 		System.out.println("Soma: " + soma);
-		System.out.println("Subtração: " + subtracao);
+		System.out.println("SubtraÃ§Ã£o: " + subtracao);
 	}
 }

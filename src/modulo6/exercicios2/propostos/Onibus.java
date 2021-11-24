@@ -5,12 +5,12 @@ public class Onibus extends Veiculo {
 	@Override
 	public void ligar() {
 		super.ligar();
-		System.out.println("Ônibus ligado");
+		System.out.println("Ã”nibus ligado");
 	}
 
 	@Override
 	public void desligar() {
 		super.desligar();
-		System.out.println("Ônibus desligado");
+		System.out.println("Ã”nibus desligado");
 	}
 }

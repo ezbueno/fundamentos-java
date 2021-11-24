@@ -10,9 +10,9 @@ public class Aplicacao {
 		try {
 			o.toString();
 		} catch (NullPointerException e) {
-			System.out.println("O mÈtodo est· sendo chamado em um objeto nulo");
+			System.out.println("O m√©todo est√° sendo chamado em um objeto nulo");
 		} finally {
-			System.out.println("Fim do mÈtodo");
+			System.out.println("Fim do m√©todo");
 		}
 	}
 }

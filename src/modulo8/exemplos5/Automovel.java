@@ -7,7 +7,7 @@ public class Automovel {
 	
 	public void acelerar(int velocidade) throws AcimaVelocidadeMaximaException {
 		if (this.velocidadeAtual + velocidade > VELOCIDADE_MAXIMA) {
-			throw new AcimaVelocidadeMaximaException("Excedeu a velocidade m·xima");
+			throw new AcimaVelocidadeMaximaException("Excedeu a velocidade m√°xima");
 		}
 		this.velocidadeAtual += velocidade;
 	}

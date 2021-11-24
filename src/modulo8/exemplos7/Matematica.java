@@ -12,7 +12,7 @@ public class Matematica {
 	
 	private static double calcularDelta(double a, double b, double c) {
 		double delta = (b * b) - (4 * a * c);
-		assert delta > 0 : "O valor de delta é " + delta;
+		assert delta > 0 : "O valor de delta Ã© " + delta;
 		return delta;
 	}
 }

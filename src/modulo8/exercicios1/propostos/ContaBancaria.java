@@ -6,11 +6,11 @@ public class ContaBancaria {
 		
 	public void sacar(double valor) throws ValorInvalidoException, SaldoInsuficienteException {
 		if (valor <= 0) {
-			throw new ValorInvalidoException("Valor inv·lido para saque", valor);
+			throw new ValorInvalidoException("Valor inv√°lido para saque", valor);
 		}
 		
 		if (valor > this.saldo) {
-			throw new SaldoInsuficienteException("N„o h· saldo suficiente disponÌvel", this.saldo);
+			throw new SaldoInsuficienteException("N√£o h√° saldo suficiente dispon√≠vel", this.saldo);
 		}
 		
 		this.saldo -= valor;
@@ -18,7 +18,7 @@ public class ContaBancaria {
 	
 	public void depositar(double valor) throws ValorInvalidoException {
 		if (valor <= 0) {
-			throw new ValorInvalidoException("Valor inv·lido para depÛsito", valor);
+			throw new ValorInvalidoException("Valor inv√°lido para dep√≥sito", valor);
 		}
 				
 		this.saldo += valor;

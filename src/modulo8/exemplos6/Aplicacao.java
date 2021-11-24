@@ -5,12 +5,12 @@ public class Aplicacao {
 	public static void main(String[] args) {
 
 		ContatoPJ c1 = new ContatoPJ();
-		c1.setNome("JosÈ");
+		c1.setNome("Jos√©");
 		c1.setCnpj("05.006.456/0001-45");
 
-		c1.getEndereco().setRua("Rua dos Limıes");
+		c1.getEndereco().setRua("Rua dos Lim√µes");
 		c1.getEndereco().setNumero("100");
-		c1.getEndereco().setCidade("Ribeir„o Distante");
+		c1.getEndereco().setCidade("Ribeir√£o Distante");
 		c1.getEndereco().setEstado("Passarinho");
 
 		Agenda a = new Agenda();

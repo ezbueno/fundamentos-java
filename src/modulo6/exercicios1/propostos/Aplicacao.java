@@ -3,17 +3,17 @@ package modulo6.exercicios1.propostos;
 /**
  * @author Ezandro Bueno
  * Crie duas classes: Ponto2D e Ponto3D. Ponto2D possui como atributos as coordenadas x e y, 
- * enquanto Ponto3D, alÈm delas, tambÈm possui a coordenada z. Utilize a relaÁ„o de heranÁa 
+ * enquanto Ponto3D, al√©m delas, tamb√©m possui a coordenada z. Utilize a rela√ß√£o de heran√ßa 
  * para representar estas classes. 
  * A respeito dos construtores, Ponto2D deve ter apenas um construtor, que recebe os valores 
- * de x e y como par‚metros (tipo double). J· Ponto3D tambÈm deve ter apenas um construtor, 
- * que deve receber x, y e z como par‚metros (tambÈm do tipo double). 
- * Dica: Se a relaÁ„o de heranÁa e a declaraÁ„o dos construtores foram feitas corretamente, 
- * vocÍ dever·, obrigatoriamente, chamar o construtor da superclasse explicitamente. 
- * Ambas as classes devem sobrescrever o mÈtodo toString(), que È originalmente declarado 
- * na classe Object. Este mÈtodo deve retornar uma representaÁ„o do objeto em forma de 
- * String, indicando qual o valor de cada coordenada. … importante que Ponto3D tire proveito do 
- * mÈtodo toString() de Ponto2D para mostrar os valores das coordenadas x e y. 
+ * de x e y como par√¢metros (tipo double). J√° Ponto3D tamb√©m deve ter apenas um construtor, 
+ * que deve receber x, y e z como par√¢metros (tamb√©m do tipo double). 
+ * Dica: Se a rela√ß√£o de heran√ßa e a declara√ß√£o dos construtores foram feitas corretamente, 
+ * voc√™ dever√°, obrigatoriamente, chamar o construtor da superclasse explicitamente. 
+ * Ambas as classes devem sobrescrever o m√©todo toString(), que √© originalmente declarado 
+ * na classe Object. Este m√©todo deve retornar uma representa√ß√£o do objeto em forma de 
+ * String, indicando qual o valor de cada coordenada. √â importante que Ponto3D tire proveito do 
+ * m√©todo toString() de Ponto2D para mostrar os valores das coordenadas x e y. 
  */
 public class Aplicacao {
 

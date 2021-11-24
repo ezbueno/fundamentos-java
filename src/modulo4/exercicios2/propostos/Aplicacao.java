@@ -2,14 +2,14 @@ package modulo4.exercicios2.propostos;
 
 /**
  * @author Ezandro Bueno
- * Crie a classe Fracao, que representa uma fração matemática. Esta classe deve ser capaz de 
- * armazenar o numerador e o denominador da fração. Ela ainda deve ter métodos que recebem 
- * uma fração como parâmetro, multiplicam ambas as frações, e retornam uma nova fração 
+ * Crie a classe Fracao, que representa uma fraÃ§Ã£o matemÃ¡tica. Esta classe deve ser capaz de 
+ * armazenar o numerador e o denominador da fraÃ§Ã£o. Ela ainda deve ter mÃ©todos que recebem 
+ * uma fraÃ§Ã£o como parÃ¢metro, multiplicam ambas as fraÃ§Ãµes, e retornam uma nova fraÃ§Ã£o 
  * como resultado. 
- * Crie um programa simples que instancia duas frações, define seus valores, calcula o valor da 
- * multiplicação entre elas e mostra o resultado. 
- * Dica: a multiplicação de 2 frações é feita através da multiplicação dos numeradores e dos 
- * denominadores das frações, e o valor resultante é uma terceira fração.
+ * Crie um programa simples que instancia duas fraÃ§Ãµes, define seus valores, calcula o valor da 
+ * multiplicaÃ§Ã£o entre elas e mostra o resultado. 
+ * Dica: a multiplicaÃ§Ã£o de 2 fraÃ§Ãµes Ã© feita atravÃ©s da multiplicaÃ§Ã£o dos numeradores e dos 
+ * denominadores das fraÃ§Ãµes, e o valor resultante Ã© uma terceira fraÃ§Ã£o.
  */
 public class Aplicacao {
 
@@ -25,6 +25,5 @@ public class Aplicacao {
 				
 		System.out.println(fracao3.obterFracao());
 		System.out.println(fracao3.calcularValor());
-
 	}
 }

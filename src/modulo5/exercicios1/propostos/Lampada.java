@@ -17,9 +17,9 @@ public class Lampada {
 
 	public void imprimir() {
 		if (this.ligada) {
-			System.out.println("Lâmpada ligada");
+			System.out.println("LÃ¢mpada ligada");
 		} else {
-			System.out.println("Lâmpada desligada");
+			System.out.println("LÃ¢mpada desligada");
 		}
 	}
 }

@@ -10,7 +10,7 @@ public class Aplicacao {
 		c.depositar(1000D);
 		c.sacar(200D);
 		
-		System.out.println("Número da conta: " + c.getNumConta());
+		System.out.println("NÃºmero da conta: " + c.getNumConta());
 		System.out.println("Ativa: " + c.isAtiva());
 		System.out.println("Saldo: " + c.getSaldo());
 	}

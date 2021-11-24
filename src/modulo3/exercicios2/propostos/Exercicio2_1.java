@@ -2,7 +2,7 @@ package modulo3.exercicios2.propostos;
 
 /**
  * @author Ezandro Bueno
- * 1. Imprima todos os números inteiros de 10 a 25 utilizando uma estrutura de repetição. 
+ * 1. Imprima todos os nÃºmeros inteiros de 10 a 25 utilizando uma estrutura de repetiÃ§Ã£o. 
  */
 public class Exercicio2_1 {
 

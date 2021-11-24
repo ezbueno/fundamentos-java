@@ -7,10 +7,10 @@ import java.time.Period;
 
 /**
  * @author Ezandro Bueno
- * Crie uma aplicaÁ„o que faz dois c·lculos e imprime o resultado na tela:
+ * Crie uma aplica√ß√£o que faz dois c√°lculos e imprime o resultado na tela:
  * 1. Calcula quantos anos, meses e dias se passaram desde a data de nascimento de James 
- * Gosling (criador do Java) atÈ a data de hoje. Ele nasceu em 19/05/1955.
- * 2. Calcula quantos segundos se passaram desde ‡s 3h da manh„ do dia de hoje.
+ * Gosling (criador do Java) at√© a data de hoje. Ele nasceu em 19/05/1955.
+ * 2. Calcula quantos segundos se passaram desde √†s 3h da manh√£ do dia de hoje.
  */
 public class Aplicacao {
 

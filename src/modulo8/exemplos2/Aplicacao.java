@@ -10,7 +10,7 @@ public class Aplicacao {
 			boolean iguais = Comparador.comparar(o1, o2);
 			System.out.println(iguais);
 		} catch (NullPointerException e) {
-			System.out.println("O objeto é nulo");
+			System.out.println("O objeto Ã© nulo");
 		}
 	}
 }

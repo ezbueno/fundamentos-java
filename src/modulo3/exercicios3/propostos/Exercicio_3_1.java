@@ -2,14 +2,14 @@ package modulo3.exercicios3.propostos;
 
 /**
  * @author Ezandro Bueno
- * O c·lculo do fatorial de um n˙mero (!) segue a seguinte regra: 
+ * O c√°lculo do fatorial de um n√∫mero (!) segue a seguinte regra: 
  * 0! = 1
  * 1! = 0! x 1
  * 2! = 1! x 2
  * ... 
  * n! = (n - 1)! x n
- * Escreva uma aplicaÁ„o que efetua o c·lculo do fatorial utilizando a forma iterativa (usando 
- * estruturas de repetiÁ„o).
+ * Escreva uma aplica√ß√£o que efetua o c√°lculo do fatorial utilizando a forma iterativa (usando 
+ * estruturas de repeti√ß√£o).
  */
 public class Exercicio_3_1 {
 	

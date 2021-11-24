@@ -2,14 +2,14 @@ package modulo3.exercicios6.propostos;
 
 /**
  * @author Ezandro Bueno
- * Verifique a validade de uma data e mostre uma mensagem na tela dizendo se a data é válida ou 
- * inválida. Deve haver três variáveis para armazenar esta data: uma para o dia, outra para o mês 
+ * Verifique a validade de uma data e mostre uma mensagem na tela dizendo se a data Ã© vÃ¡lida ou 
+ * invÃ¡lida. Deve haver trÃªs variÃ¡veis para armazenar esta data: uma para o dia, outra para o mÃªs 
  * e outra para o ano. Considere que fevereiro pode ter somente 28 dias.
  */
 public class Exercicio6 {
 	
-	private static final String DATA_VALIDA = "Data válida!";
-	private static final String DATA_INVALIDA = "Data inválida!";
+	private static final String DATA_VALIDA = "Data vÃ¡lida!";
+	private static final String DATA_INVALIDA = "Data invÃ¡lida!";
 	
 	public static void main(String[] args) {
 		int dia = 30;

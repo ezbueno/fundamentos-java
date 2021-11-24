@@ -5,7 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * Classe utilitária para ler dados do console
+ * Classe utilitÃ¡ria para ler dados do console
  * 
  * @author Carlos Tosin
  * @version 1.0
@@ -13,7 +13,7 @@ import java.io.InputStreamReader;
 public class Console {
 
 	/**
-	 * Lê uma string do console
+	 * LÃª uma string do console
 	 * 
 	 * @return String lida
 	 */
@@ -27,7 +27,7 @@ public class Console {
 	}
 
 	/**
-	 * Lê um valor do tipo int do console
+	 * LÃª um valor do tipo int do console
 	 * 
 	 * @return valor int lido
 	 */
@@ -37,12 +37,12 @@ public class Console {
 		try {
 			return Integer.parseInt(str);
 		} catch (NumberFormatException e) {
-			throw new RuntimeException(str + " não é um int válido");
+			throw new RuntimeException(str + " nÃ£o Ã© um int vÃ¡lido");
 		}
 	}
 
 	/**
-	 * Lê um valor do tipo double do console
+	 * LÃª um valor do tipo double do console
 	 * 
 	 * @return valor double lido
 	 */
@@ -52,7 +52,7 @@ public class Console {
 		try {
 			return Double.parseDouble(str);
 		} catch (NumberFormatException e) {
-			throw new RuntimeException(str + " não é um double válido");
+			throw new RuntimeException(str + " nÃ£o Ã© um double vÃ¡lido");
 		}
 	}
 }

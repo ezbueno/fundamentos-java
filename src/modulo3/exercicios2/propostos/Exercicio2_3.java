@@ -2,7 +2,7 @@ package modulo3.exercicios2.propostos;
 
 /**
  * @author Ezandro Bueno
- * 3. Começando em 0, imprima os números seguintes, enquanto a soma dos números já 
+ * 3. ComeÃ§ando em 0, imprima os nÃºmeros seguintes, enquanto a soma dos nÃºmeros jÃ¡ 
  * impressos for menor que 100.
  */
 public class Exercicio2_3 {

@@ -1,7 +1,7 @@
 package modulo11.exemplos2;
 
 /**
- * Endereço do contato
+ * EndereÃ§o do contato
  * @author Ezandro Bueno
  * @version 1.0
  */

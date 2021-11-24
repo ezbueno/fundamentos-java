@@ -10,6 +10,6 @@ public class Aplicacao {
 		f.derrapar();
 		p.derrapar();
 		
-		System.out.println("Velocidade m·xima: " + Automovel.getVelocidadeMaxima());
+		System.out.println("Velocidade m√°xima: " + Automovel.getVelocidadeMaxima());
 	}
 }

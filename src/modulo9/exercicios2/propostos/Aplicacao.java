@@ -2,17 +2,17 @@ package modulo9.exercicios2.propostos;
 
 /**
  * @author Ezandro Bueno
- * Implemente um método processar(), que recebe uma String s como parâmetro e retorna 
+ * Implemente um mÃ©todo processar(), que recebe uma String s como parÃ¢metro e retorna 
  * uma nova String. Ele deve funcionar da seguinte forma:
- * Se s for null, o método retorna null.
- * A String s deve ser convertida para caracteres maiúsculos.
- * Se o tamanho de s for menor ou igual a 3, a String s convertida para maiúscula é 
+ * Se s for null, o mÃ©todo retorna null.
+ * A String s deve ser convertida para caracteres maiÃºsculos.
+ * Se o tamanho de s for menor ou igual a 3, a String s convertida para maiÃºscula Ã© 
  * retornada por inteiro.
- * Se s tiver tamanho maior que 3, além da conversão para maiúsculo, os 3 primeiros 
+ * Se s tiver tamanho maior que 3, alÃ©m da conversÃ£o para maiÃºsculo, os 3 primeiros 
  * caracteres devem ter sua ordem invertida antes da String ser retornada.
  * Para exemplificar o funcionamento do algoritmo, observe a tabela abaixo. Ela mostra diversas 
- * formas de chamar o método e o retorno esperado em cada caso:
- * Invocação             Retorno   
+ * formas de chamar o mÃ©todo e o retorno esperado em cada caso:
+ * InvocaÃ§Ã£o             Retorno   
  * processar(null)       null
  * processar("abc")      AB
  * processar("abcdefg")  CBADEFG
