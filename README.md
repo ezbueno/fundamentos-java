@@ -1,16 +1,16 @@
 # Softblue
 * Curso - Fundamentos de Java
 
-# Módulos
-* 1 - Introdução ao Java
-* 2 - Instalação e Configuração do Ambiente de Desenvolvimento
-* 3 - Programação Java: Conceitos Iniciais
+# MÃ³dulos
+* 1 - IntroduÃ§Ã£o ao Java
+* 2 - InstalaÃ§Ã£o e ConfiguraÃ§Ã£o do Ambiente de Desenvolvimento
+* 3 - ProgramaÃ§Ã£o Java: Conceitos Iniciais
 * 4 - Classes e Objetos
-* 5 - Modificadores de Acesso, Construtores e Elementos Estáticos
-* 6 - Herança e Polimorfismo
+* 5 - Modificadores de Acesso, Construtores e Elementos EstÃ¡ticos
+* 6 - HeranÃ§a e Polimorfismo
 * 7 - Classes Abstratas e Interfaces
-* 8 - Tratamento de Exceções
-* 9 - Strings, Datas e Números
+* 8 - Tratamento de ExceÃ§Ãµes
+* 9 - Strings, Datas e NÃºmeros
 * 10 - Enums, Classes Wrappers e Autoboxing
-* 11 - Organização do Código Java
-* 12 - Coleções de Dados
+* 11 - OrganizaÃ§Ã£o do CÃ³digo Java
+* 12 - ColeÃ§Ãµes de Dados
