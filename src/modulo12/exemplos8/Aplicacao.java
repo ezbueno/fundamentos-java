@@ -23,7 +23,7 @@ public class Aplicacao {
 		for (Produto produto : produtos) {
 			System.out.println("=> " + produto);
 		}
-		
+
 		System.out.println("p1 => " + produtos.contains(p1));
 		System.out.println("p2 => " + produtos.contains(p2));
 		System.out.println("p3 => " + produtos.contains(p3));

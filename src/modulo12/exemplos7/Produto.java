@@ -20,6 +20,6 @@ public class Produto {
 
 	@Override
 	public String toString() {
-		return id + ", " + descricao;
+		return this.id + ", " + this.descricao;
 	}
 }

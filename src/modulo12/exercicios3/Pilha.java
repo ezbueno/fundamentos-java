@@ -1,4 +1,4 @@
-package modulo12.exercicios3.respostas;
+package modulo12.exercicios3;
 
 /*
  * Coleção de dados do tipo pilha. Na pilha, o último elemento a ser adicionado é o primeiro a ser removido.
@@ -15,18 +15,20 @@ public class Pilha extends Colecao {
 	public Pilha(int tamanho) {
 		super(tamanho);
 	}
-
+	
 	/* Insere um item na coleção */
+	@Override
 	public void inserirItem(Object item) {
-		itens[posAtual] = item;
-		posAtual++;
+		this.itens[this.posAtual] = item;
+		this.posAtual++;
 	}
 
 	/* Remove o último elemento adicionado na coleção */
+	@Override
 	public Object removerItem() {
-		posAtual--;
-		Object item = itens[posAtual];
-		itens[posAtual] = null;
+		this.posAtual--;
+		Object item = this.itens[this.posAtual];
+		this.itens[this.posAtual] = null;
 		return item;
 	}
 }
