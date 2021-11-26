@@ -17,12 +17,12 @@ import java.util.TreeSet;
  * adicionar(), que adiciona um produto à coleção, e imprimir(), que imprime todos os 
  * produtos.
  * Crie uma aplicação que cria os seguintes produtos:
- * Nome                          Valor
- * Laranja						 2,50
- * Laranja						 2,70
- * Maçã						     1,45
- * Mamão				         4,95
- * Limão						 2,30
+ * Nome			Valor
+ * Laranja		2,50
+ * Laranja		2,70
+ * Maçã			1,45
+ * Mamão		4,95
+ * Limão		2,30
  * Experimente adicionar os produtos acima a coleções de diversos tipos, como ArrayList, 
  * HashSet e TreeSet, e imprima os resultados. Lembre-se que todos estes tipos podem ser 
  * atribuídos ao atributo produtos, pois todos são do tipo Collection. Procure perceber o que 
