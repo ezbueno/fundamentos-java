@@ -8,7 +8,7 @@ package modulo4.exercicios1;
  * - ponteiroHora (tipo Ponteiro) 
  * - ponteiroMinuto (tipo Ponteiro) 
  * - ponteiroSegundo (tipo Ponteiro) 
- *	Métodos da classe Relogio: 
+ * Métodos da classe Relogio: 
  * - acertarRelogio(int, int, int): Acerta o relógio, posicionando adequadamente 
  * cada ponteiro do relógio. Os parâmetros passados são hora, minuto e segundo. 
  * - lerHora(): retorna a hora atual do relógio. 
