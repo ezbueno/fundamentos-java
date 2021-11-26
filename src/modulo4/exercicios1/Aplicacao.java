@@ -29,9 +29,9 @@ public class Aplicacao {
 		Relogio relogio = new Relogio();	
 		relogio.acertarRelogio(3, 30, 50);
 						
-		System.out.println("Posi��o da hora: " + relogio.ponteiroHora.posicao);
-		System.out.println("Posi��o do minuto: " + relogio.ponteiroMinuto.posicao);
-		System.out.println("Posi��o do segundo: " + relogio.ponteiroSegundo.posicao);
+		System.out.println("Posição da hora: " + relogio.ponteiroHora.posicao);
+		System.out.println("Posição do minuto: " + relogio.ponteiroMinuto.posicao);
+		System.out.println("Posição do segundo: " + relogio.ponteiroSegundo.posicao);
 		
 		int hora = relogio.lerHora();
 		int minuto = relogio.lerMinuto();
@@ -42,6 +42,6 @@ public class Aplicacao {
 		System.out.println("Segundo: " + segundo);
 		
 		relogio.acertarRelogio(22, 0, 0);
-		System.out.println("Hora do segundo rel�gio: " + relogio.lerHora());
+		System.out.println("Hora do segundo relógio: " + relogio.lerHora());
 	}
 }
