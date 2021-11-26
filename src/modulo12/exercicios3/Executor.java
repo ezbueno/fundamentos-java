@@ -1,5 +1,16 @@
 package modulo12.exercicios3;
 
+/**
+ * @author Ezandro Bueno
+ * Implemente a classe Colecao e duas subclasses: Pilha e Fila. Uma coleção tem um array de 
+ * dados que fazem parte da coleção. 
+ * Tanto a pilha como a fila são coleções. A diferença entre elas está na disciplina de acesso. Na 
+ * pilha, o último elemento inserido é o primeiro a ser removido (como numa pilha de pratos). Na 
+ * fila, o primeiro elemento inserido é o primeiro a ser removido (como numa fila de banco). 
+ * Os métodos da classe Colecao responsáveis por estas operações são:
+ * void inserirItem(Object item) 
+ * Object removerItem() 
+ */
 public class Executor {
 
 	public static void main(String[] args) {
