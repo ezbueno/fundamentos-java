@@ -1,5 +1,7 @@
 package modulo13.exercicios1;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -31,23 +33,40 @@ public class Aplicacao {
 	public static void main(String[] args) throws IOException {
 
 		String item = "";
+		String line = "";
+		
+		try (FileReader fr = new FileReader("lista.txt")) {
+			BufferedReader br = new BufferedReader(fr);
+			
+			if ((line = br.readLine()) == null) {
+				System.out.println("Não há itens cadastrados na lista!");
+			} else {
+				System.out.println("Itens cadastrados na lista:");
+				while (line != null) {
+					System.out.println("=> " + line);
+					line = br.readLine();
+				}
+			}
+		}
 		
 		try (Scanner sc = new Scanner(System.in);
-				FileWriter fw = new FileWriter("lista.txt");
-				PrintWriter pr = new PrintWriter(fw)) {			
-
+				FileWriter fw = new FileWriter("lista.txt", true);
+				PrintWriter pr = new PrintWriter(fw)) {
+			
 			while (true) {
 				System.out.println("Informe o nome do item:");
 				item = sc.nextLine();
 
 				if (!item.isBlank() && !item.equals("0")) {
-					pr.println(item);
+					pr.println(item.trim());
 				}
 
 				if (item.equals("0")) {
+					System.out.println("Fim do programa!");
 					break;
 				}
 			}
 		}
 	}
 }
+ 
