@@ -1,0 +1,2 @@
+Arquivo a ser copiado
+Esta é a segunda linha
