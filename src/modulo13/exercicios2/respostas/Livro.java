@@ -35,14 +35,14 @@ public class Livro implements Recordable {
 	}
 	
 	public void read(DataInputStream in) throws IOException {
-		// L� o t�tulo do livro
+		// Lê o título do livro
 		titulo = in.readUTF();
 		if (titulo.equals(NULL_DATA)) {
-			// Se o t�tulo for <null>, ele era null quando foi gravado
+			// Se o título for <null>, ele era null quando foi gravado
 			titulo = null;
 		}
 		
-		// L� o n�mero de p�ginas do livro
+		// Lê o número de páginas do livro
 		numPaginas = in.readInt();
 		
 		// Se o objeto autor for nulo, cria o objeto para que ele tenha seus dados populados
@@ -50,23 +50,23 @@ public class Livro implements Recordable {
 			autor = new Autor();
 		}
 		
-		// Chama o m�todo read do autor, que vai popular os dados do autor
+		// Chama o método read do autor, que vai popular os dados do autor
 		autor.read(in);
 	}
 
 	public void write(DataOutputStream out) throws IOException {
-		// Grava o t�tulo
+		// Grava o título
 		if (titulo == null) {
-			// Se o t�tulo for nulo, grava <null>
+			// Se o título for nulo, grava <null>
 			out.writeUTF(NULL_DATA);
 		} else {
 			out.writeUTF(titulo);
 		}
 		
-		// Grava o n�mero de p�ginas
+		// Grava o número de páginas
 		out.writeInt(numPaginas);
 		
-		// Se houver um autor para o livro faz a grava��o dos seus dados
+		// Se houver um autor para o livro faz a gravação dos seus dados
 		if (autor != null) {
 			autor.write(out);
 		}

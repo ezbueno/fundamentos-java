@@ -9,7 +9,7 @@ public class Livro implements Recordable {
 	private String titulo;
 	private int numPaginas;
 	private Autor autor;
-
+	
 	public Livro() {
 	}
 
@@ -45,11 +45,38 @@ public class Livro implements Recordable {
 
 	@Override
 	public void read(DataInputStream in) throws IOException {
+		this.titulo = in.readUTF();
 		
+		if (this.titulo == null) {
+			this.titulo = null;
+		}
+		
+		this.numPaginas = in.readInt();
+		
+		if (this.autor == null) {
+			this.autor = new Autor();
+		}
+		
+		this.autor.read(in);
 	}
 
 	@Override
-	public void write(DataOutputStream out) throws IOException {
+	public void write(DataOutputStream out) throws IOException {		
+		if (this.titulo == null) {
+			out.writeUTF(null);
+		} else {
+			out.writeUTF(this.titulo);
+		}
 		
+		out.writeInt(this.numPaginas);
+		
+		if (this.autor != null) {
+			this.autor.write(out);
+		}
 	}
+
+	@Override
+	public String toString() {
+		return "Livro [Título=" + this.titulo + ", Número de Páginas=" + this.numPaginas + ", Autor=" + this.autor + "]";
+	}	
 }

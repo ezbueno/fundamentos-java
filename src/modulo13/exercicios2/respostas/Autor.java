@@ -28,14 +28,14 @@ public class Autor implements Recordable {
 
 	@Override
 	public void read(DataInputStream in) throws IOException {
-		// L� o nome do autor
+		// Lê o nome do autor
 		nome = in.readUTF();
 		if (nome.equals(NULL_DATA)) {
-			// Se a string <null> for retornada, significa que o autor n�o possu�a nome quando foi gravado
+			// Se a string <null> for retornada, significa que o autor não possuía nome quando foi gravado
 			nome = null;
 		}
 		
-		// L� a data de nascimento, em forma de um long
+		// Lê a data de nascimento, em forma de um long
 		long time = in.readLong();
 		if (time == -1) {
 			// Caso -1 tenha sido gravado, a data de nascimento era nula

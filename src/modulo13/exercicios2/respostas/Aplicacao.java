@@ -14,13 +14,13 @@ public class Aplicacao {
 
 	public static void main(String[] args) throws Exception {
 		
-		// Exibe o menu de op��es
-		System.out.println("Escolha uma op��o:");
+		// Exibe o menu de opções
+		System.out.println("Escolha uma opção:");
 		System.out.println("1 - Gravar dados");
 		System.out.println("2 - Ler dados");
 		System.out.print("=> ");
 		
-		// L� a op��o digitada
+		// Lê a opção digitada
 		Scanner keyboard = new Scanner(System.in);
 		String opcao = keyboard.nextLine();
 		keyboard.close();
@@ -32,7 +32,7 @@ public class Aplicacao {
 			lerDados();
 			
 		} else {
-			System.out.println("Op��o desconhecida");
+			System.out.println("Opção desconhecida");
 		}
 	}
 	
@@ -46,10 +46,10 @@ public class Aplicacao {
 			// Cria um stream para leitura dos dados
 			dis = new DataInputStream(new FileInputStream(FILE));
 			
-			// L� os dados de l1
+			// Lê os dados de l1
 			l1.read(dis);
 			
-			// L� os dados de l2
+			// Lê os dados de l2
 			l2.read(dis);
 		} finally {
 			// Fecha a stream
@@ -58,7 +58,7 @@ public class Aplicacao {
 			}
 		}
 		
-		// Imprime os dados dos livros (o m�todo toString() ser� chamado)
+		// Imprime os dados dos livros (o mêtodo toString() será chamado)
 		System.out.println(l1);
 		System.out.println(l2);
 	}
@@ -71,7 +71,7 @@ public class Aplicacao {
 		
 		// Cria os autores e livros a serem gravados no arquivo
 		Autor a1 = new Autor();
-		a1.setNome("Jos� Silva");
+		a1.setNome("José Silva");
 		a1.setDataNascimento(sdf.parse(d1));
 		
 		Autor a2 = new Autor();
@@ -79,18 +79,18 @@ public class Aplicacao {
 		a2.setDataNascimento(sdf.parse(d2));
 		
 		Livro l1 = new Livro();
-		l1.setTitulo("Orienta��o a Objetos");
+		l1.setTitulo("Orientação a Objetos");
 		l1.setNumPaginas(350);
 		l1.setAutor(a1);
 		
 		Livro l2 = new Livro();
-		l2.setTitulo("Programa��o Java");
+		l2.setTitulo("Programação Java");
 		l2.setNumPaginas(200);
 		l2.setAutor(a2);
 		
 		DataOutputStream dos = null;
 		try {
-			// Cria um stream para grava��o dos dados
+			// Cria um stream para gravação dos dados
 			dos = new DataOutputStream(new FileOutputStream(FILE));
 			
 			// Grava os dados de l1
