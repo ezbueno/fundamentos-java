@@ -2,3 +2,4 @@ mamão
 pera
 caqui
 kiwi
+Laranja
