@@ -16,9 +16,9 @@ import java.util.Scanner;
  * também de lê-los.
  * Primeiramente crie duas classes, Livro e Autor, de acordo com o demonstrado no diagrama 
  * abaixo:
- * Livro			Autor
- * titulo: String	nome: String
- * numPaginas: int	dataNascimento: Date
+ * Livro				Autor
+ * titulo: String		nome: String
+ * numPaginas: int		dataNascimento: Date
  * autor: Autor
  * Crie também uma interface Recordable, que declara dois métodos:
  * public void read(DataInputStream in) throws IOException 
