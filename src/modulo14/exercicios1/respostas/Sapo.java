@@ -1,18 +1,18 @@
 package modulo14.exercicios1.respostas;
 
 /**
- * A classe Sapo representa cada um dos sapos que ir� correr. Cada sapo � uma thread, j� que cada um 
+ * A classe Sapo representa cada um dos sapos que irá correr. Cada sapo é uma thread, já que cada um 
  * executa de forma independente
  */
 public class Sapo extends Thread {
 	
 	/**
-	 * Tempo m�ximo (em milissegundos) que um sapo descansa antes de dar o pr�ximo pulo
+	 * Tempo máximo (em milissegundos) que um sapo descansa antes de dar o próximo pulo
 	 */
 	private static final int MAXIMO_DESCANSO = 500;
 	
 	/**
-	 * Dist�ncia m�xima que o sapo pode alcan�ar com seu pulo
+	 * Distância máxima que o sapo pode alcançar com seu pulo
 	 */
 	private static final int MAXIMO_PULO = 50;
 	
@@ -27,23 +27,23 @@ public class Sapo extends Thread {
 	private String nome;
 	
 	/**
-	 * Dist�ncia total a ser percorrida pelo sapo
+	 * Distância total a ser percorrida pelo sapo
 	 */
 	private int distanciaTotal;
 	
 	/**
-	 * Dist�ncia j� percorrida pelo sapo
+	 * Distância já percorrida pelo sapo
 	 */
 	private int distanciaPercorrida;
 	
 	/**
-	 * Dist�ncia que o sapo pulou no �ltimo pulo
+	 * Distância que o sapo pulou no último pulo
 	 */
 	private int ultimoPulo;
 	
 	/**
-	 * Coloca��o final do sapo.
-	 * Este atributo � est�tico porque ele � compartilhado entre todas as inst�ncias da classe
+	 * Colocação final do sapo.
+	 * Este atributo é estático porque ele é compartilhado entre todas as instâncias da classe
 	 * (existe apenas um atributo 'colocacao' para todos os sapos correndo
 	 */
 	private static int colocacao;
@@ -51,7 +51,7 @@ public class Sapo extends Thread {
 	/**
 	 * Construtor
 	 * @param nome Nome do sapo
-	 * @param distanciaTotal Dist�ncia total
+	 * @param distanciaTotal Distância total
 	 */
 	public Sapo(String nome, int distanciaTotal) {
 		this.nome = nome;
@@ -63,9 +63,9 @@ public class Sapo extends Thread {
 	 */
 	@Override
 	public void run() {
-		/* Este c�digo ser� executado pela thread. Cada sapo realiza tr�s a��es: pula, avisa sua situa��o
-		 * (isto �, mostra uma mensagem no console a respeito do seu estado atual na corrida) e descansa.
-		 * Este c�digo executa num loop, at� que a dist�ncia total tenha sido atingida.
+		/* Este código será executado pela thread. Cada sapo realiza três ações: pula, avisa sua situação
+		 * (isto é, mostra uma mensagem no console à respeito do seu estado atual na corrida) e descansa.
+		 * Este código executa num loop, até que a distância total tenha sido atingida.
 		 */
 		
 		while(distanciaPercorrida < distanciaTotal) {
@@ -74,7 +74,7 @@ public class Sapo extends Thread {
 			descansar();
 		}
 		
-		//depois que o sapo atingiu a linha de chegada, a sua coloca��o deve ser gravada
+		//depois que o sapo atingiu a linha de chegada, a sua colocação deve ser gravada
 		cruzarLinhaDeChegada();
 	}
 	
@@ -82,13 +82,13 @@ public class Sapo extends Thread {
 	 * Faz o sapo pular
 	 */
 	private void pular() {		
-		//a dist�ncia do pulo � calculada randomicamente, entre 0 e MAXIMO_PULO
+		//a distância do pulo é calculada randomicamente, entre 0 e MAXIMO_PULO
 		ultimoPulo = (int)(Math.random() * MAXIMO_PULO);
 		
-		//incrementa a dist�ncia percorrida com a dist�ncia do pulo
+		//incrementa a distância percorrida com a distância do pulo
 		distanciaPercorrida += ultimoPulo;
 		
-		//faz o truncamento da dist�ncia percorrida caso ela ultrapasse a dist�ncia total
+		//faz o truncamento da distância percorrida caso ela ultrapasse a distância total
 		if(distanciaPercorrida > distanciaTotal) {
 			distanciaPercorrida = distanciaTotal;
 		}
@@ -98,7 +98,7 @@ public class Sapo extends Thread {
 	 * Faz o sapo descansar
 	 */
 	private void descansar() {
-		//calcula o tempo de descanso de forma rand�mica, entre 0 e MAXIMO_DESCANSO ms
+		//calcula o tempo de descanso de forma randômica, entre 0 e MAXIMO_DESCANSO ms
 		int tempo = (int)(Math.random() * MAXIMO_DESCANSO);
 		try {
 			//faz a thread do sapo dormir por um determinado tempo (a thread para de executar)
@@ -109,17 +109,17 @@ public class Sapo extends Thread {
 	}
 	
 	/**
-	 * Mostra a situa��o atual do sapo na corrida
+	 * Mostra a situação atual do sapo na corrida
 	 */
 	private void avisarSituacao() {
-		System.out.println(nome + " pulou " + ultimoPulo + "cm. A dist�ncia percorrida foi de " + distanciaPercorrida + "cm");
+		System.out.println(nome + " pulou " + ultimoPulo + "cm. A distância percorrida foi de " + distanciaPercorrida + "cm");
 	}
 	
 	/**
-	 * Marca a coloca��o do sapo.
-	 * O acesso ao atributo 'colocacao' deve ser sincronizado porque pode have problema se dois sapos cruzarem
+	 * Marca a colocação do sapo.
+	 * O acesso ao atributo 'colocacao' deve ser sincronizado porque pode haver problema se dois sapos cruzarem
 	 * a linha de chegada praticamente ao mesmo tempo.
-	 * Foi criado um atributo 'monitor' para gerenciar a regi�o cr�tica, mas o pr�prio atributo 'colocacao'
+	 * Foi criado um atributo 'monitor' para gerenciar a região crítica, mas o próprio atributo 'colocacao'
 	 * poderia ser usado com esta finalidade.
 	 */
 	private void cruzarLinhaDeChegada() {

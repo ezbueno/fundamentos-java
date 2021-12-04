@@ -6,12 +6,12 @@ package modulo14.exercicios1.respostas;
 public class Corrida {
 
 	/**
-	 * Quantidade de sapos que participar�o da corrida
+	 * Quantidade de sapos que participarão da corrida
 	 */
 	private static final int QTDE_SAPOS = 5;
 	
 	/**
-	 * Dist�ncia total a ser percorrida por cada sapo
+	 * Distância total a ser percorrida por cada sapo
 	 */
 	private static final int DISTANCIA_TOTAL = 500;
 	
@@ -20,7 +20,7 @@ public class Corrida {
 		//cria um array de sapos
 		Sapo[] sapos = new Sapo[QTDE_SAPOS];
 		
-		//instancia e inicia cada sapo (cada sapo � uma thread)
+		//instancia e inicia cada sapo (cada sapo é uma thread)
 		for (int i = 0; i < sapos.length; i++) {
 			sapos[i] = new Sapo("Sapo_" + (i + 1), DISTANCIA_TOTAL);
 			sapos[i].start();
