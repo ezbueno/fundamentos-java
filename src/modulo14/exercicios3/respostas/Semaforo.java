@@ -2,16 +2,16 @@ package modulo14.exercicios3.respostas;
 
 public class Semaforo extends Thread {
 	
-	// Tempo de espera do sem�foro a cada mudada de cor.
+	// Tempo de espera do semáforo a cada mudada de cor.
 	private static final int TEMPO_SEMAFORO = 3000;
 
-	// Enum com as cores poss�veis do sem�foro
+	// Enum com as cores possíveis do semáforo
 	private enum Cor {
 		VERDE,
 		VERMELHA
 	}
 	
-	// Cor atual do sem�foro
+	// Cor atual do semáforo
 	private Cor cor = Cor.VERMELHA;
 	
 	@Override
@@ -30,10 +30,10 @@ public class Semaforo extends Thread {
 	}
 	
 	public synchronized void atravessar(Carro carro) {
-		// O carro s� pode atravessar se a cor for verde.
+		// O carro só pode atravessar se a cor for verde.
 		// Se for vermelha, o carro fica bloqueado no monitor
 		while (cor == Cor.VERMELHA) {
-			carro.mostrarMensagem("Est� aguardando no sem�foro");
+			carro.mostrarMensagem("Está aguardando no semáforo");
 			try {
 				wait();
 			} catch (InterruptedException e) {
@@ -46,12 +46,12 @@ public class Semaforo extends Thread {
 		if (cor == Cor.VERDE) {
 			cor = Cor.VERMELHA;
 		} else {
-			// Quando o sem�foro muda para cor verde, ele avisa os carros bloqueados
+			// Quando o semáforo muda para cor verde, ele avisa os carros bloqueados
 			// que eles podem passar
 			cor = Cor.VERDE;
 			notifyAll();
 		}
 		
-		System.out.println("Cor do sem�foro: " + cor);
+		System.out.println("Cor do semáforo: " + cor);
 	}
 }

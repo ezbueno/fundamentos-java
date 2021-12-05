@@ -4,13 +4,13 @@ import java.util.Random;
 
 
 public class Carro extends Thread {
-	// Gerador de n�meros rand�micos. � est�tico para ser compartilhado entre todos os carros.
+	// Gerador de números randômicos. É estático para ser compartilhado entre todos os carros.
 	private static Random random = new Random();
 	
 	// ID do carro
 	private int id;
 	
-	// Sem�foro por onde o carro vai passar
+	// Semáforo por onde o carro vai passar
 	private Semaforo semaforo;
 	
 	// Construtor.
@@ -29,14 +29,14 @@ public class Carro extends Thread {
 			} catch (InterruptedException e) {
 			}
 			
-			// Avisa que chegou no sem�foro
-			mostrarMensagem("Chegou ao sem�foro");
+			// Avisa que chegou no semáforo
+			mostrarMensagem("Chegou ao semáforo");
 			
-			// Tenta passar pelo sem�foro. Se n�o conseguir, ficar� bloqueado.
+			// Tenta passar pelo semáforo. Se não conseguir, ficará bloqueado.
 			semaforo.atravessar(this);
 			
-			// Avisa que passou pelo sem�foro
-			mostrarMensagem("Passou pelo sem�foro");
+			// Avisa que passou pelo semáforo
+			mostrarMensagem("Passou pelo semáforo");
 		}
 	}
 	
