@@ -16,3 +16,6 @@
 * 12 - Coleções de Dados
 * 13 - Fundamentos de I/O
 * 14 - Programação Multithread e Sincronismo
+* 15 - Expressões Regulares
+* 16 - Mais Produtividade no Eclipse
+* 17 - Mão na Massa: Criando Aplicações na Prática (Jogo da Velha, Jogo da Forca, Agenda de Contatos)
